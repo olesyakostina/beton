@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;900&display=swap");
+
+$blue: #3d9be9;
+// & амперсан
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+* {
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 50px;
+  margin: 0;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.hero {
+  min-height: 100vh;
+  background-image: url("../img/Rectangle\ 5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &-heder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+
+    .tel {
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+
+    .nav {
+      &-list {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      &__item {
+        padding: 5px 10px;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+  }
+}
+.hero-body {
+  display: flex;
+  align-items: center;
+
+  .hero__right {
+    img {
+      width: 100%;
+    }
+  }
+}
+.order-btn {
+  background-color: $blue;
+  border: none;
+  color: #fff;
+  padding: 12px 45px;
+  font-size: 16px;
+}
